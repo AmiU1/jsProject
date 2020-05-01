@@ -1,0 +1,26 @@
+{
+  "name": "jsproject",
+  "version": "1.0.0",
+  "description": "testFramework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amitesh kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^6.1.5",
+    "webdriverio": "^6.1.5"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^6.1.6",
+    "@wdio/mocha-framework": "^6.1.6",
+    "@wdio/spec-reporter": "^6.1.5",
+    "@wdio/sync": "^6.1.5",
+    "chromedriver": "^81.0.0",
+    "cypress": "^4.5.0",
+    "selenium-standalone-service": "^5.16.10",
+    "supertest": "^4.0.2",
+    "wdio-chromedriver-service": "^6.0.2"
+  }
+}
