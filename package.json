@@ -4,22 +4,30 @@
   "description": "testFramework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "cypress:open": "cypress open",
+    "stryker": "stryker -c stryker.conf.js"
   },
   "author": "amitesh kumar",
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^6.1.5",
+    "mocha": "^7.1.2",
     "webdriverio": "^6.1.5"
   },
   "devDependencies": {
+    "stryker": "^0.4.3",
+    "stryker-api": "^0.2.0",
+    "stryker-mocha-runner": "^0.1.0",
     "@wdio/local-runner": "^6.1.6",
     "@wdio/mocha-framework": "^6.1.6",
     "@wdio/spec-reporter": "^6.1.5",
     "@wdio/sync": "^6.1.5",
+    "chai": "^4.2.0",
     "chromedriver": "^81.0.0",
     "cypress": "^4.5.0",
-    "selenium-standalone-service": "^5.16.10",
+    "local-runner": "^0.1.1-alpha",
+    "selenium-standalone": "^6.17.0",
     "supertest": "^4.0.2",
     "wdio-chromedriver-service": "^6.0.2"
   }
