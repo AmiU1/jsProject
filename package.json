@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "cypress:open": "cypress open",
-    "stryker": "stryker -c stryker.conf.js"
+    "stryker": "stryker -c stryker.conf.js",
+    "build": "webpack"
   },
   "author": "amitesh kumar",
   "license": "ISC",
