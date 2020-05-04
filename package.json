@@ -7,9 +7,10 @@
     "start": "node server.js",
     "cypress:open": "cypress open",
     "stryker": "stryker -c stryker.conf.js",
-    "lighthouse": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet  --chrome-flags='--headless' https://kitconcept.com/blog"
+    "lighthouse": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet  --chrome-flags='--headless' https://kitconcept.com/blog",
+    "artillery": "artillery run sampleartillery.yml",
+    "test": "nyc mocha 'test/unitTest/sampleProgramTest.js'"
   },
-
   "author": "amitesh kumar",
   "license": "ISC",
   "dependencies": {
@@ -27,6 +28,7 @@
     "cypress": "^4.5.0",
     "lighthouse": "^5.6.0",
     "local-runner": "^0.1.1-alpha",
+    "nyc": "^15.0.1",
     "selenium-standalone": "^6.17.0",
     "stryker": "^0.4.3",
     "stryker-api": "^0.2.0",
